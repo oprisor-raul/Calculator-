@@ -115,7 +115,7 @@ struct Home: View {
                 
                 ForEach(colors,id: \.self){color in
                     
-                    NavigationLink(destination: NoteEdit(colorBackground: color, title: "Titlu 1 ", content: "Anastasia \n")) {
+                    NavigationLink(destination: NoteEdit(colorBackground: color, title: "", content: "")) {
                         Circle()
                             .fill(color)
                             .frame(width: 30, height: 30)

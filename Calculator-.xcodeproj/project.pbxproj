@@ -50,7 +50,7 @@
 		83EE676D25F2771500FEBACA = {
 			isa = PBXGroup;
 			children = (
-				83EE677825F2771500FEBACA /* Calculator- */,
+				83EE677825F2771500FEBACA /* Calculator */,
 				83EE677725F2771500FEBACA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,7 +63,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		83EE677825F2771500FEBACA /* Calculator- */ = {
+		83EE677825F2771500FEBACA /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
 				C4D1274D2915CDE70099D22C /* Models */,
@@ -73,7 +73,7 @@
 				83EE678225F2771700FEBACA /* Info.plist */,
 				83EE677F25F2771700FEBACA /* Preview Content */,
 			);
-			path = "Calculator-";
+			path = Calculator;
 			sourceTree = "<group>";
 		};
 		83EE677F25F2771700FEBACA /* Preview Content */ = {
