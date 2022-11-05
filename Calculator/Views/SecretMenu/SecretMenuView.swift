@@ -9,23 +9,29 @@ import SwiftUI
 import LocalAuthentication
 
 struct SecretMenuView: View {
-    @State private var authorized = false
+    @State var authorized : Bool
     
     var body: some View {
-        VStack {
+        ZStack {
             if !(authorized) {
-                Spacer()
-                Button("Authenticate with Face ID")
+                Color.black
+                MatrixRainView()
+                    .ignoresSafeArea()
+                Button("Escape the Matrix")
                 {
                     authorization()
                 }
                 .fixedSize()
                 .padding(30)
-                .background(RoundedRectangle(cornerRadius: 10).fill(.green))
+                .background(RoundedRectangle(cornerRadius: 10).fill(Color(.gray).opacity(0.8)))
                 .foregroundColor(.white)
+                Spacer()
             }
         }
-        .onAppear(perform: {self.authorization()})
+        .navigationBarBackButtonHidden(true)
+        .onAppear(perform:
+                    { if(authorized == false) {
+                        self.authorization()}})
         .background(.black)
         if authorized {
             Home()
@@ -56,6 +62,7 @@ struct SecretMenuView: View {
 
 struct SecretMenuView_Previews: PreviewProvider {
     static var previews: some View {
-        SecretMenuView()
+        SecretMenuView(authorized: false)
     }
 }
+

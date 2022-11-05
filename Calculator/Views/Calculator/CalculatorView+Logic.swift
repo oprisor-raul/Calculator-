@@ -31,7 +31,7 @@ enum CalcButton: String {
     var buttonColor: Color {
         switch self {
         case .add, .subtract, .mutliply, .divide, .equal:
-            return .orange
+            return Color("SkyBlue")
         case .clear, .negative, .percent:
             return Color(.lightGray)
         default:
@@ -72,7 +72,7 @@ struct CalculatorView: View {
                         VStack{
                             if(value == "28980") {
                                 // Secret Menu
-                                NavigationLink(destination: SecretMenuView()) {
+                                NavigationLink(destination: SecretMenuView(authorized: false)) {
                                     Text("                                      ")
                                 }
                                 Spacer()

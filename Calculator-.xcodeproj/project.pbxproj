@@ -11,6 +11,9 @@
 		83EE677C25F2771500FEBACA /* CalculatorView+Logic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EE677B25F2771500FEBACA /* CalculatorView+Logic.swift */; };
 		83EE677E25F2771700FEBACA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83EE677D25F2771700FEBACA /* Assets.xcassets */; };
 		83EE678125F2771700FEBACA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83EE678025F2771700FEBACA /* Preview Assets.xcassets */; };
+		C431334B29165F7C005CA525 /* MatrixEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C431334A29165F7C005CA525 /* MatrixEffectView.swift */; };
+		C431334F291664E9005CA525 /* Matrix Code NFI.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C431334E2916636E005CA525 /* Matrix Code NFI.ttf */; };
+		C4313351291680F6005CA525 /* NoteEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4313350291680F6005CA525 /* NoteEdit.swift */; };
 		C4D1274C2915CD150099D22C /* SecretMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D1274B2915CD150099D22C /* SecretMenuView.swift */; };
 		C4D1274F2915CDF60099D22C /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D1274E2915CDF60099D22C /* Note.swift */; };
 		C4D127522915CEAF0099D22C /* NotesHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D127512915CEAF0099D22C /* NotesHome.swift */; };
@@ -24,6 +27,9 @@
 		83EE677D25F2771700FEBACA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83EE678025F2771700FEBACA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		83EE678225F2771700FEBACA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C431334A29165F7C005CA525 /* MatrixEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixEffectView.swift; sourceTree = "<group>"; };
+		C431334E2916636E005CA525 /* Matrix Code NFI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Matrix Code NFI.ttf"; sourceTree = "<group>"; };
+		C4313350291680F6005CA525 /* NoteEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteEdit.swift; sourceTree = "<group>"; };
 		C4D1274B2915CD150099D22C /* SecretMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretMenuView.swift; sourceTree = "<group>"; };
 		C4D1274E2915CDF60099D22C /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		C4D127512915CEAF0099D22C /* NotesHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesHome.swift; sourceTree = "<group>"; };
@@ -78,12 +84,38 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		C431334929165F64005CA525 /* Matrix */ = {
+			isa = PBXGroup;
+			children = (
+				C431334E2916636E005CA525 /* Matrix Code NFI.ttf */,
+				C431334A29165F7C005CA525 /* MatrixEffectView.swift */,
+			);
+			path = Matrix;
+			sourceTree = "<group>";
+		};
+		C431334C29165FFC005CA525 /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				83EE677B25F2771500FEBACA /* CalculatorView+Logic.swift */,
+			);
+			path = Calculator;
+			sourceTree = "<group>";
+		};
+		C431334D29166020005CA525 /* SecretMenu */ = {
+			isa = PBXGroup;
+			children = (
+				C4D1274B2915CD150099D22C /* SecretMenuView.swift */,
+			);
+			path = SecretMenu;
+			sourceTree = "<group>";
+		};
 		C4B03CE42915CBF700955526 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C4D127502915CE860099D22C /* ViewsNote */,
-				83EE677B25F2771500FEBACA /* CalculatorView+Logic.swift */,
-				C4D1274B2915CD150099D22C /* SecretMenuView.swift */,
+				C431334C29165FFC005CA525 /* Calculator */,
+				C431334D29166020005CA525 /* SecretMenu */,
+				C431334929165F64005CA525 /* Matrix */,
+				C4D127502915CE860099D22C /* Note */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -96,13 +128,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		C4D127502915CE860099D22C /* ViewsNote */ = {
+		C4D127502915CE860099D22C /* Note */ = {
 			isa = PBXGroup;
 			children = (
 				C4D127512915CEAF0099D22C /* NotesHome.swift */,
 				C4D127532915CECE0099D22C /* NotesBlur.swift */,
+				C4313350291680F6005CA525 /* NoteEdit.swift */,
 			);
-			path = ViewsNote;
+			path = Note;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +197,7 @@
 			files = (
 				83EE678125F2771700FEBACA /* Preview Assets.xcassets in Resources */,
 				83EE677E25F2771700FEBACA /* Assets.xcassets in Resources */,
+				C431334F291664E9005CA525 /* Matrix Code NFI.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,8 +210,10 @@
 			files = (
 				C4D127542915CECE0099D22C /* NotesBlur.swift in Sources */,
 				83EE677C25F2771500FEBACA /* CalculatorView+Logic.swift in Sources */,
+				C4313351291680F6005CA525 /* NoteEdit.swift in Sources */,
 				83EE677A25F2771500FEBACA /* CalculatorApp.swift in Sources */,
 				C4D127522915CEAF0099D22C /* NotesHome.swift in Sources */,
+				C431334B29165F7C005CA525 /* MatrixEffectView.swift in Sources */,
 				C4D1274C2915CD150099D22C /* SecretMenuView.swift in Sources */,
 				C4D1274F2915CDF60099D22C /* Note.swift in Sources */,
 			);
