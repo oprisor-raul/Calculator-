@@ -25,7 +25,7 @@ var notes: [Note] = [
     
     Note(note: "13 Things You Should Give Up If You Want To Be a Successful UX Designer", date: getSampleDate(offset: -10),cardColor: Color("Purple")),
     
-    Note(note: "The Psychology Principles Every UI/UX Designer Needs to Know The Psychology Principles Every UI/UX Designer Needs to KnowThe Psychology Principles Every UI/UX Designer Needs to KnowThe Psychology Principles Every UI/UX Designer Needs to KnowThe Psychology Principles Every UI/UX Designer Needs to Know", date: getSampleDate(offset: -15),cardColor: Color("Green")),
+    Note(note: "The Psychology Principles Every UI/UX Designer Needs to Know", date: getSampleDate(offset: -15),cardColor: Color("Green")),
     
     Note(note: "52 Research Terms you need to know as a UX Designer", date: getSampleDate(offset: 10),cardColor: Color("SkyBlue")),
     
